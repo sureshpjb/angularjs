@@ -1,0 +1,32 @@
+<html ng-app="routeApp">
+	<head>
+		<script type="text/javascript" src="lib/scripts/angular.js"></script>
+		<script type="text/javascript" src="lib/scripts/angular-route.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+		<link type="text/css" rel="stylesheet" href="lib/styles/bootstrap.css">
+		<base href="/">
+		<!--base href='http://localhost:8080/'/-->
+	</head>
+	<body>
+		<div class="container">
+			<!-- header -->
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Angular Routing Demo</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<ul>
+						<li><a href="home">Home</a></li>
+						<li><a href="aboutus">About Us</a></li>
+						<li><a href="products">Products</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-8">
+					<ng-view></ng-view>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
